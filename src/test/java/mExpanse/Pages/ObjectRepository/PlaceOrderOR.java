@@ -4,27 +4,42 @@ import org.openqa.selenium.By;
 
 public class PlaceOrderOR {
     public static class Locator{
-
-        public static By Register = By.xpath("//A[@href='/register?returnUrl=%2F'][text()='Register']");
-        public static By Gender = By.xpath("//INPUT[@id='gender-male']");
-        public static By FirstName = By.xpath("//INPUT[@id='FirstName']");
-        public static By LastName = By.xpath("//INPUT[@id='LastName']");
-        public static By dobD = By.xpath("/html/body/div[6]/div[3]/div/div/div/div[2]/form/div[1]/div[2]/div[4]/div/select[1]");
-        public static By Day2 = By.xpath("/html/body/div[6]/div[3]/div/div/div/div[2]/form/div[1]/div[2]/div[4]/div/select[1]/option[3]");
-        public static By dobM = By.xpath("/html/body/div[6]/div[3]/div/div/div/div[2]/form/div[1]/div[2]/div[4]/div/select[2]");
-        public static By Mon3 = By.xpath("/html/body/div[6]/div[3]/div/div/div/div[2]/form/div[1]/div[2]/div[4]/div/select[2]/option[4]");
-        public static By dobY = By.xpath("/html/body/div[6]/div[3]/div/div/div/div[2]/form/div[1]/div[2]/div[4]/div/select[3]");
-        public static By Yer3 = By.xpath("/html/body/div[6]/div[3]/div/div/div/div[2]/form/div[1]/div[2]/div[4]/div/select[3]/option[4]");
-        public static By Email = By.xpath("//INPUT[@id='Email']");
-        public static By Company = By.xpath("//INPUT[@id='Company']");
-        public static By Password = By.xpath("//INPUT[@id='Password']");
-        public static By ConfirmPassword = By.xpath("//INPUT[@id='ConfirmPassword']");
-        public static By RegButton = By.xpath("//BUTTON[@id='register-button']");
-        public static By Msg = By.xpath("/html/body/div[6]/div[3]/div/div/div/div[2]/div[1]");
-
+        public static By Electronics = By.xpath("/html/body/div[6]/div[2]/ul[1]/li[6]/a");
+        public static By CellPhone = By.xpath("//IMG[@alt='Picture for category Cell phones']");
+        public static By Nokia = By.xpath("//div[@class='picture']//img[@title='Show details for Nokia Lumia 1020']");
+        public static By Count = By.xpath("//input[@id='product_enteredQuantity_20']");
+        public static By AddToCart = By.xpath("//BUTTON[@id='add-to-cart-button-20']");
+        public static By ShoppingCart = By.xpath("//A[@href='/cart'][text()='shopping cart']");
+        public static By Terms = By.xpath("//INPUT[@id='termsofservice']");
+        public static By Checkout = By.xpath("//BUTTON[@id='checkout']");
+        public static By CheckoutAsGuest = By.xpath("//BUTTON[@type='button'][text()='Checkout as Guest']");
+        public static By FirstName = By.xpath("//INPUT[@id='BillingNewAddress_FirstName']");
+        public static By LastName = By.xpath("//INPUT[@id='BillingNewAddress_LastName']");
+        public static By Email = By.xpath("//INPUT[@id='BillingNewAddress_Email']");
+        public static By Country = By.xpath("//SELECT[@id='BillingNewAddress_CountryId']");
+        public static By Australia = By.xpath("//*[@id=\"BillingNewAddress_CountryId\"]/option[16]");
+        public static By State = By.xpath("//SELECT[@id='BillingNewAddress_StateProvinceId']");
+        public static By SouthAus = By.xpath("//*[@id=\"BillingNewAddress_StateProvinceId\"]/option[6]");
+        public static By City = By.xpath("//INPUT[@id='BillingNewAddress_City']");
+        public static By Address = By.xpath("//INPUT[@id='BillingNewAddress_Address1']");
+        public static By Zip = By.xpath("//INPUT[@id='BillingNewAddress_ZipPostalCode']");
+        public static By Phone = By.xpath("//INPUT[@id='BillingNewAddress_PhoneNumber']");
+        public static By Continue1 = By.xpath("(//BUTTON[@type='button'][text()='Continue'])[1]");
+        public static By NextDayAir = By.xpath("//INPUT[@id='shippingoption_1']");
+        public static By Continue2 = By.xpath("(//BUTTON[@type='button'][text()='Continue'])[3]");
+        public static By CreditCard = By.xpath("//INPUT[@id='paymentmethod_1']");
+        public static By Continue3 = By.xpath("(//BUTTON[@type='button'][text()='Continue'])[4]");
+        public static By CardHolderName = By.xpath("//INPUT[@id='CardholderName']");
+        public static By CardNumber = By.xpath("//INPUT[@id='CardNumber']");
+        public static By CardCode = By.xpath("//INPUT[@id='CardCode']");
+        public static By ExpYr = By.xpath("//SELECT[@id='ExpireYear']");
+        public static By Year = By.xpath("//*[@id=\"ExpireYear\"]/option[4]");
+        public static By Continue4 = By.xpath("(//BUTTON[@type='button'][text()='Continue'])[5]");
+        public static By Confirm = By.xpath("//BUTTON[@type='button'][text()='Confirm']");
+        public static By Msg = By.xpath("//STRONG[text()='Your order has been successfully processed!']");
     }
 
     public static class UIElements{
-        public static String Msg = "Your registration completed";
+        public static String Msg = "Your order has been successfully processed!";
     }
 }

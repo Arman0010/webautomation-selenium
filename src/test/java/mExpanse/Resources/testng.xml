@@ -9,6 +9,7 @@
 
             <class name="mExpanse.Pages.TestCases.RegistrationTC"></class>
             <class name="mExpanse.Pages.TestCases.PlaceOrderTC"></class>
+
         </classes>
     </test>
 </suite>

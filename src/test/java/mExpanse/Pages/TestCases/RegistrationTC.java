@@ -2,10 +2,7 @@ package mExpanse.Pages.TestCases;
 
 import mExpance.Library.BaseClass;
 import mExpanse.Pages.Implementation.Registration_Impl;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Listeners;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 @Listeners(mExpanse.Listener.CustomListener.class)
 public class RegistrationTC extends BaseClass{
@@ -22,7 +19,7 @@ public class RegistrationTC extends BaseClass{
         reg.registration(driver);
     }
 
-    @AfterTest
+    @AfterClass
     public void  testCaseTearDown() {
         tearDown();
     }

@@ -29,7 +29,6 @@ public class Registration_Impl implements Registration_Interface {
         Operations.sendText(RegistrationOR.Locator.ConfirmPassword,"pass@1234",driver);
         Operations.click(RegistrationOR.Locator.RegButton,driver);
         Operations.matchText(RegistrationOR.Locator.Msg,RegistrationOR.UIElements.Msg,driver);
-        Thread.sleep(3000);
     }
 
 }
